@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="fr" class="no-js" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NTEE Ltd — Design, Développement, Marketing & Formations (Cameroun)</title>
+  <meta name="description" content="NTEE Ltd : design graphique, développement web & mobile, marketing digital, spots publicitaires, formations certifiantes et offres d'emplois dans toutes les villes du Cameroun." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <!-- place ton logo ici : assets/images/logo.png -->
+        <img src="assets/images/logo.png"  alt="Logo NTEE Ltd"/>
+        <div>
+          <!-- <div class="name">NTEE Ltd</div> -->
+          <!-- <div class="tag">Créativité • Technologie • Impact</div> -->
+        </div>
+      </div>
+
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="#services">Services</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#process">Process</a>
+        <a href="#formations">Formations</a>
+        <a href="#emplois">Emplois</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="btn" aria-label="Basculer le thème"><i class="fa-solid fa-moon"></i><span style="margin-left:.4rem">Mode</span></button>
+      </nav>
+
+      <button id="burger" class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu" aria-label="Menu mobile" aria-hidden="true">
+      <a href="#services">Services</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#process">Process</a>
+      <a href="#formations">Formations</a>
+      <a href="#emplois">Emplois</a>
+      <a href="#contact">Contact</a>
+      <a href="#" id="mobileTheme" class="row" style="padding:1rem 1.2rem; gap:.6rem;"><i class="fa-solid fa-moon"></i> Basculer le mode</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="container" id="accueil">
+    <div class="hero">
+      <div>
+        <span class="chip"><i class="fa-solid fa-location-dot"></i> Cameroun • Services & formations</span>
+        <h1 class="headline">Nous concevons des marques fortes, développons des apps <span style="color:var(--primary-blue)">web & mobiles</span> et formons des talents certifiés.</h1>
+        <p class="sub">De l'identité visuelle aux campagnes sociales en passant par la production de spots publicitaires, NTEE Ltd est votre partenaire 360°. Nous publions aussi des <b>offres d'emplois</b> dans toutes les villes du Cameroun.</p>
+        <div class="actions">
+          <a href="#contact" class="btn primary"><i class="fa-solid fa-paper-plane"></i> Demander un devis</a>
+          <a href="#services" class="btn"><i class="fa-solid fa-grid-2"></i> Voir nos services</a>
+        </div>
+
+        <div class="stats" style="margin-top:1.6rem">
+          <div class="stat"><b>100+</b><div class="sub">Identités visuelles</div></div>
+          <div class="stat"><b>60+</b><div class="sub">Projets d'apps</div></div>
+          <div class="stat"><b>30+</b><div class="sub">Formations certifiées</div></div>
+        </div>
+      </div>
+
+      <div class="reveal" style="border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow)">
+        
+        <img src="assets/images/imgc.jpg" alt="Equipe NTEE Ltd" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2 style="margin:0">Nos Services</h2>
+        <div class="row">
+          <span class="chip"><i class="fa-solid fa-palette"></i> Design</span>
+          <span class="chip"><i class="fa-solid fa-code"></i> Développement</span>
+          <span class="chip"><i class="fa-brands fa-facebook"></i> Social</span>
+          <span class="chip"><i class="fa-solid fa-bullhorn"></i> Publicité</span>
+        </div>
+      </div>
+
+      <div class="cards">
+        <!-- Card: Design -->
+        <article class="card reveal">
+          <div class="media"><img src="assets/images/identitéc.jpg" alt="Design graphique - personnes"></div>
+          <div class="content">
+            <div class="title"><i class="fa-solid fa-swatchbook"></i> Design Graphique & Identités visuelles</div>
+            <p>Logo, chartes graphiques, templates réseaux sociaux, cartes de visite, brand book prêt à l'usage.</p>
+            <ul>
+              <li>Audit & plateforme de marque</li>
+              <li>Logo principal, variantes et favicon</li>
+              <li>Kit export (PNG, SVG, PDF)</li>
+              <li>Templates réseaux sociaux</li>
+            </ul>
+            <div class="row">
+              <a class="btn red" href="#contact"><i class="fa-solid fa-pen-nib"></i> Commencer un branding</a>
+              <span class="chip"><i class="fa-solid fa-file-pdf"></i> Brand book inclus</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card: Dev -->
+        <article class="card reveal">
+          <div class="media"><img src="assets/images/devc.jpg" alt="Développement - personnes"></div>
+          <div class="content">
+            <div class="title"><i class="fa-solid fa-laptop-code"></i> Développement Web & Mobile</div>
+            <p>Sites vitrines, e-commerce, dashboards, APIs et apps (Android/iOS). Performance, accessibilité et sécurité.</p>
+            <ul>
+              <li>React / Vue / Node / Django / Flutter</li>
+              <li>Intégration paiements (Mobile Money)</li>
+              <li>SEO technique & analytics</li>
+              <li>Hébergement & maintenance</li>
+            </ul>
+            <div class="row">
+              <a class="btn primary" href="#contact"><i class="fa-solid fa-rocket"></i> Lancer mon projet</a>
+              <span class="chip"><i class="fa-solid fa-shield"></i> Sécurité</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card: Marketing -->
+        <article class="card reveal">
+          <div class="media"><img src="assets/images/marketc.jpg" alt="Marketing digital - personnes"></div>
+          <div class="content">
+            <div class="title"><i class="fa-solid fa-hashtag"></i> Marketing Digital (Réseaux Sociaux)</div>
+            <p>Planification, création d'assets, community management et campagnes payantes (Facebook, IG, TikTok).</p>
+            <ul>
+              <li>Stratégie & lignes éditoriales</li>
+              <li>Création visuelle & vidéos courtes</li>
+              <li>Ads: ciblage, A/B tests, retargeting</li>
+              <li>Reporting & optimisation</li>
+            </ul>
+            <div class="row">
+              <a class="btn" href="#contact"><i class="fa-solid fa-calendar-days"></i> Demander un planning</a>
+              <span class="chip"><i class="fa-solid fa-chart-line"></i> ROI mesurable</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card: Publicité -->
+        <article class="card reveal">
+          <div class="media"><img src="assets/images/pubc.jpg" alt="Spots publicitaires - personnes"></div>
+          <div class="content">
+            <div class="title"><i class="fa-solid fa-clapperboard"></i> Publicité & Spots professionnels</div>
+            <p>Storyboard, tournage, motion design et post-production — formats TV, radio et social.</p>
+            <ul>
+              <li>Script & storyboard</li>
+              <li>Tournage (caméra, son, lumière) & voix-off</li>
+              <li>Montage, étalonnage & mixage</li>
+              <li>Diffusion multi-formats</li>
+            </ul>
+            <div class="row">
+              <a class="btn" href="#contact"><i class="fa-solid fa-video"></i> Créer un spot</a>
+              <span class="chip"><i class="fa-solid fa-tv"></i> TV / Web</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card: Offres d'emplois -->
+        <article class="card reveal">
+          <div class="media"><img src="assets/images/jobs.jpg" alt="Offres d'emplois - personnes "></div>
+          <div class="content">
+            <div class="title"><i class="fa-solid fa-briefcase"></i> Publication d'offres d'emplois (Cameroun)</div>
+            <p>Diffusion & relais d'annonces dans toutes les villes : Douala, Yaoundé, Bafoussam, Bamenda…</p>
+            <ul>
+              <li>Soumettre une offre via formulaire</li>
+              <li>Filtrage par ville & catégorie</li>
+              <li>Mise en avant sponsorisée</li>
+              <li>Partage multi-plateformes</li>
+            </ul>
+            <div class="row">
+              <a class="btn" href="#emplois"><i class="fa-solid fa-filter"></i> Voir les offres</a>
+              <span class="chip"><i class="fa-solid fa-location-dot"></i> Toutes villes</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card: Support & Formation -->
+        <article class="card reveal">
+          <div class="media"><img src="assets/images/formc.jpg" alt="Support & formation - personnes"></div>
+          <div class="content">
+            <div class="title"><i class="fa-solid fa-headset"></i> Accompagnement, Support & Formations</div>
+            <p>Formations métiers, maintenance et accompagnement à long terme pour garantir des résultats durables.</p>
+            <ul>
+              <li>Formations certifiantes (Design, Dev, Marketing)</li>
+              <li>Contrats de maintenance & SLA</li>
+              <li>Tableaux de bord & reporting</li>
+            </ul>
+            <div class="row">
+              <a class="btn" href="#formations"><i class="fa-solid fa-graduation-cap"></i> Voir formations</a>
+              <span class="chip"><i class="fa-solid fa-file-lines"></i> Programmes pratiques</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Réalisations -->
+  <section id="realisations">
+    <div class="container">
+      <div class="section-title">
+        <h2 style="margin:0">Réalisations récentes</h2>
+        <p class="sub">Un aperçu de projets livrés par nos équipes.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="tile reveal">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1600&auto=format&fit=crop" alt="Dashboard analytique" style="border-radius:12px;border:1px solid var(--border)">
+          <h3>Dashboard analytique</h3>
+          <p class="sub">Conception UI/UX + développement full-stack.</p>
+        </div>
+        <div class="tile reveal">
+          <img src="https://images.unsplash.com/photo-1557800636-894a64c1696f?q=80&w=1600&auto=format&fit=crop" alt="Identité visuelle" style="border-radius:12px;border:1px solid var(--border)">
+          <h3>Identité visuelle</h3>
+          <p class="sub">Charte, icônes, templates réseaux sociaux.</p>
+        </div>
+        <div class="tile reveal">
+          <img src="assets/images/spotc.jpg" alt="Spot publicitaire" style="border-radius:12px;border:1px solid var(--border)">
+          <h3>Spot publicitaire</h3>
+          <p class="sub">Storyboard, tournage & post-production.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process">
+    <div class="container">
+      <div class="section-title">
+        <h2 style="margin:0">Notre Process</h2>
+        <p class="sub">Un cadre clair pour livrer vite et bien.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="tile reveal">
+          <h3><i class="fa-solid fa-magnifying-glass"></i> 1. Découverte</h3>
+          <p>Atelier de cadrage, objectifs, KPI, publics cibles et contraintes.</p>
+        </div>
+        <div class="tile reveal">
+          <h3><i class="fa-solid fa-wand-magic-sparkles"></i> 2. Création</h3>
+          <p>Maquettes, prototypes, contenus et itérations rapides.</p>
+        </div>
+        <div class="tile reveal">
+          <h3><i class="fa-solid fa-truck-fast"></i> 3. Livraison & Suivi</h3>
+          <p>Mise en production, formation, reporting et optimisation continue.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formations certifiantes -->
+  <section id="formations">
+    <div class="container">
+      <div class="section-title">
+        <h2 style="margin:0">Formations certifiantes</h2>
+        <p class="sub">Programmes pratiques, évaluations et attestation de compétence.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem">
+        <div class="tile reveal">
+          <div class="row" style="justify-content:space-between">
+            <h3 style="margin:0">Design graphique & Motion</h3>
+            <span style="background:var(--primary-blue);color:#fff;padding:.25rem .5rem;border-radius:8px;font-weight:700">Certificat</span>
+          </div>
+          <p class="sub">Logo, charte, motion pour réseaux sociaux — projets pratiques + portfolio.</p>
+          <ul class="sub">
+            <li>Durée : 8 semaines (30h)</li>
+            <li>Projet final & attestation</li>
+          </ul>
+        </div>
+
+        <div class="tile reveal">
+          <div class="row" style="justify-content:space-between">
+            <h3 style="margin:0">Dév. Web & Mobile</h3>
+            <span style="background:var(--primary-blue);color:#fff;padding:.25rem .5rem;border-radius:8px;font-weight:700">Certificat</span>
+          </div>
+          <p class="sub">HTML/CSS/JS, React, Node, Flutter — projets réels et dépôt Git.</p>
+          <ul class="sub">
+            <li>Durée : 12 semaines (45h)</li>
+            <li>Projet final & attestation</li>
+          </ul>
+        </div>
+
+        <div class="tile reveal">
+          <div class="row" style="justify-content:space-between">
+            <h3 style="margin:0">Marketing Digital & Ads</h3>
+            <span style="background:var(--primary-blue);color:#fff;padding:.25rem .5rem;border-radius:8px;font-weight:700">Certificat</span>
+          </div>
+          <p class="sub">Stratégie social, création d'assets, campagnes & analytics.</p>
+          <ul class="sub">
+            <li>Durée : 6 semaines (24h)</li>
+            <li>Campagne réelle & reporting</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="margin-top:1rem" class="row">
+        <a class="btn primary" href="#contact"><i class="fa-solid fa-calendar-plus"></i> Demander une session</a>
+        <a class="btn" href="#contact"><i class="fa-solid fa-file-arrow-down"></i> Programme complet (PDF)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offres d'emplois -->
+  <section id="emplois">
+    <div class="container">
+      <div class="section-title">
+        <h2 style="margin:0">Offres d'emplois au Cameroun</h2>
+        <p class="sub">Filtrez par ville et catégorie, puis postulez.</p>
+      </div>
+
+      <div class="jobs-toolbar">
+        <select id="cityFilter" aria-label="Filtre ville">
+          <option value="all">Toutes les villes</option>
+          <option>Douala</option>
+          <option>Yaoundé</option>
+          <option>Bafoussam</option>
+          <option>Garoua</option>
+          <option>Maroua</option>
+          <option>Bamenda</option>
+        </select>
+
+        <select id="categoryFilter" aria-label="Filtre catégorie">
+          <option value="all">Toutes catégories</option>
+          <option>Design</option>
+          <option>Développement</option>
+          <option>Marketing</option>
+          <option>Production vidéo</option>
+        </select>
+
+        <span class="chip"><i class="fa-solid fa-envelope-open-text"></i> Soumettez la vôtre via le formulaire</span>
+      </div>
+
+      <div class="jobs" id="jobsList">
+        <article class="job reveal" data-city="Douala" data-category="Développement">
+          <div class="badge blue">CDI</div>
+          <div>
+            <h3>Développeur·se Frontend React</h3>
+            <p class="sub"><i class="fa-solid fa-location-dot"></i> Douala • <i class="fa-solid fa-code"></i> Développement</p>
+            <ul>
+              <li>React, TypeScript, API REST</li>
+              <li>Bonne sensibilité UI/UX</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job reveal" data-city="Yaoundé" data-category="Marketing">
+          <div class="badge red">Stage</div>
+          <div>
+            <h3>Assistant·e Social Media</h3>
+            <p class="sub"><i class="fa-solid fa-location-dot"></i> Yaoundé • <i class="fa-solid fa-hashtag"></i> Marketing</p>
+            <ul>
+              <li>Création de contenus & community management</li>
+              <li>Notions Facebook Ads</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job reveal" data-city="Bafoussam" data-category="Design">
+          <div class="badge blue">CDD</div>
+          <div>
+            <h3>Graphiste / Motion Designer</h3>
+            <p class="sub"><i class="fa-solid fa-location-dot"></i> Bafoussam • <i class="fa-solid fa-palette"></i> Design</p>
+            <ul>
+              <li>Suite Adobe (AI/PS/AE) ou équivalents</li>
+              <li>Montage court format (Reels/TikTok)</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2 style="margin:0">Contact & Devis</h2>
+        <p class="sub">Parlez-nous de votre projet. Réponse sous 24h ouvrées.</p>
+      </div>
+
+      <form id="contactForm" class="reveal" onsubmit="event.preventDefault(); alert('Merci ! Votre message a été envoyé.'); this.reset();">
+        <div>
+          <label>Nom</label>
+          <input required placeholder="Votre nom"/>
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="email" required placeholder="vous@exemple.com"/>
+        </div>
+        <div>
+          <label>Téléphone</label>
+          <input type="tel" placeholder="(+237) …"/>
+        </div>
+        <div>
+          <label>Service</label>
+          <select>
+            <option>Design & Identité</option>
+            <option>Développement Web/Mobile</option>
+            <option>Marketing Digital</option>
+            <option>Spot Publicitaire</option>
+            <option>Formations</option>
+            <option>Autre</option>
+          </select>
+        </div>
+        <div class="full">
+          <label>Message</label>
+          <textarea placeholder="Décrivez votre besoin…"></textarea>
+        </div>
+        <div class="full row" style="margin-top:1rem">
+          <button class="btn primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Envoyer</button>
+          <a href="#accueil" class="btn"><i class="fa-solid fa-arrow-up"></i> Haut de page</a>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container" style="padding:28px 0;">
+      <div class="footer-grid">
+        <div>
+          <div class="row" style="align-items:flex-start;gap:.6rem">
+            <img src="assets/images/logo.png" alt="Logo NTEE Ltd" style="height:28px;width:auto">
+            <!-- <b>NTEE Ltd</b> -->
+          </div>
+          <p class="sub" style="margin:.6rem 0 0">Design graphique, développement d'applications, marketing digital, production publicitaire et formations certifiantes. Offres d'emplois partout au Cameroun.</p>
+        </div>
+
+        <div>
+          <b>Services</b>
+          <ul class="sub">
+            <li>Identités visuelles</li>
+            <li>Sites & Apps</li>
+            <li>Social Media</li>
+            <li>Spots publicitaires</li>
+          </ul>
+        </div>
+
+        <div>
+          <b>Entreprise</b>
+          <ul class="sub">
+            <li><a href="#process">Notre process</a></li>
+            <li><a href="#realisations">Réalisations</a></li>
+            <li><a href="#emplois">Emplois</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <b>Contact</b>
+          <ul class="sub">
+            <li><i class="fa-brands fa-whatsapp"></i> +237 654 328 978</li>
+            <li><i class="fa-solid fa-envelope"></i> nteeltd@gmail.com</li>
+            <li><i class="fa-solid fa-location-dot"></i> Cameroun</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="space"></div>
+      <div class="copyright">© <span id="year"></span> NTEE Ltd. Tous droits réservés.</div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
